@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record id="t1" model="living.type">
+            <field name="name">课程</field>
+            <field name="desc">描述：类型一</field>
+        </record>
+        <record id="t2" model="living.type">
+            <field name="name">户外</field>
+            <field name="desc">描述：类型二</field>
+        </record>
+        <record id="t3" model="living.type">
+            <field name="name">娱乐</field>
+            <field name="desc">描述：类型三</field>
+        </record>
+        <record id="t4" model="living.type">
+            <field name="name">活动</field>
+            <field name="desc">描述：类型四</field>
+        </record>
+        <record id="t5" model="living.type">
+            <field name="name">其他</field>
+            <field name="desc">描述：类型五</field>
+        </record>
+    </data>
+</odoo>

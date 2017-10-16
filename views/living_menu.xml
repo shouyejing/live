@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <act_window
+        id="action_living_type"
+        name="直播类型"
+        res_model="living.type"
+        view_mode="tree,form" />
+    <act_window
+        id="action_living_room"
+        name="直播间信息"
+        res_model="living.room"
+        view_mode="tree,form"
+        target="current"/>
+
+
+    <act_window
+        id="action_living_cls_circle"
+        name="同学圈"
+        res_model="living.cls.circle"
+        view_mode="tree,form" />
+    <act_window
+        id="action_living_cls_info"
+        name="班级信息"
+        res_model="living.cls_info"
+        view_mode="tree,form"/>
+    <act_window
+        id="action_living_tag"
+        name="动态"
+        res_model="living.tag"
+        view_mode="tree,form"/>
+    <act_window
+        id="action_image_store"
+        name="动态图片库"
+        res_model="living.image_store"
+        view_mode="tree,form"/>
+
+
+    <act_window
+        id="action_living_user"
+        name="个人信息"
+        res_model="res.users"
+        view_mode="tree,form" />
+    <act_window
+        id="action_living_teacher"
+        name="教师信息"
+        res_model="living.teacher"
+        view_mode="tree,form"/>
+
+
+    <menuitem name="首页" id="menu_index" />
+
+    <menuitem
+        name="直播"
+        id="menu_living"
+        parent="menu_index"/>
+    <menuitem
+        name="直播类型"
+        id="menu_living_type"
+        parent="menu_living"
+        action="action_living_type"/>
+    <menuitem
+        name="直播间信息"
+        id="menu_living_info"
+        parent="menu_living"
+        action="action_living_room"/>
+
+
+    <menuitem
+        name="同学圈"
+        id="menu_circle"
+        parent="menu_index"/>
+    <menuitem
+        name="同学圈"
+        id="menu_cls_circle"
+        parent="menu_circle"
+        action="action_living_cls_circle"/>
+    <menuitem
+        name="班级信息"
+        id="menu_cls_info"
+        parent="menu_circle"
+        action="action_living_cls_info"/>
+    <menuitem
+        name="动态"
+        id="menu_tag"
+        parent="menu_circle"
+        action="action_living_tag"/>
+    <menuitem
+        name="动态图片库"
+        id="menu_tag_image_store"
+        parent="menu_circle"
+        action="action_image_store"/>
+
+
+    <menuitem
+        name="个人中心"
+        id="menu_user_center"
+        parent="menu_index"/>
+    <menuitem
+        name="个人信息"
+        id="menu_user_info"
+        action="action_living_user"
+        parent="menu_user_center"/>
+    <menuitem
+        name="教师信息"
+        id="menu_teacher_info"
+        action="action_living_teacher"
+        parent="menu_user_center"/>
+
+
+</odoo>

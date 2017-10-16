@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <data>
+        <!--继承users_tree视图-->
+        <record model="ir.ui.view" id="tree_user_info">
+            <field name="name">用户信息</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_tree"/>
+            <field name="arch" type="xml">
+                <field name="login" position="after">
+                    <field name="nick_name"/>
+                    <field name="phone"/>
+                    <field name="gender"/>
+                    <field name="birthday"/>
+                    <field name="city"/>
+                    <field name="job"/>
+                    <field name="company_name"/>
+                    <field name="class_id"/>
+                    <field name="image"/>
+                    <field name="tag_ids"/>
+                    <field name="gold"/>
+                    <field name="prize"/>
+                </field>
+            </field>
+        </record>
+
+
+        <!--继承users_form视图， 不起作用！！-->
+        <record model="ir.ui.view" id="form_user_info">
+            <field name="name">用户信息</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+
+               <field name="name" position="after">
+                   <field name="nick_name"/>
+               </field>
+            </field>
+
+
+
+        </record>
+    </data>
+
+</odoo>

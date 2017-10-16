@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <!--<record id="room_1" model="living.room">-->
+            <!--<field name="name">Java</field>-->
+            <!--<field name="type">1</field>-->
+        <!--</record>-->
+        <!--<record id="room_2" model="living.room">-->
+            <!--<field name="type">2</field>-->
+        <!--</record>-->
+    </data>
+</odoo>

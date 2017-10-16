@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="tree_living_tag">
+        <field name="name">动态</field>
+        <field name="model">living.tag</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="cls_id"/>
+                <field name="user_id"/>
+                <field name="content"/>
+                <field name="images"/>
+                <field name="comment"/>
+                <field name="praise"/>
+                <field name="click_nums"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="tree_living_image_store">
+        <field name="name">动态图片库</field>
+        <field name="model">living.image_store</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="tag_id"/>
+                <field name="image"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
