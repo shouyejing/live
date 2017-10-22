@@ -1,0 +1,21 @@
+<odoo>
+    <record model="ir.actions.act_window" id="action_live_index_banner">
+        <field name="name">首页轮播图</field>
+        <field name="res_model">live.banner</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+    <menuitem
+        name="轮播图"
+        id="menu_banner"
+        parent="menu_index"
+    />
+    <menuitem
+        name="首页轮播图"
+        id="menu_index_banner"
+        parent="menu_banner"
+        action="action_live_index_banner"
+    />
+</odoo>

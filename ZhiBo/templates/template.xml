@@ -1,0 +1,17 @@
+<odoo>
+<data>
+    <template id="qrcode">
+        <t t-call="website.layout">
+        <t t-set="title">二维码</t>
+        <div>
+            <img t-att-src="img"
+                 alt="二维码"
+                 class="img img-responsive"
+            />
+        </div>
+        </t>
+
+    </template>
+
+</data>
+</odoo>

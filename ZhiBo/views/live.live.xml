@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+
+    <record model="ir.ui.view" id="tree_live_type">
+        <field name="name">直播类型</field>
+        <field name="model">live.type</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="desc"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="tree_live_room">
+            <field name="name">直播间信息</field>
+            <field name="model">live.room</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="id"/>
+                    <field name="type"/>
+                    <field name="live_url"/>
+                    <field name="live_users"/>
+                    <field name="online_users"/>
+                    <field name="click_nums"/>
+                    <field name="online_nums"/>
+                </tree>
+            </field>
+     </record>
+
+
+    <record model="ir.ui.view" id="tree_live_online_users">
+        <field name="name">在线用户表</field>
+        <field name="model">live.online_user_ids</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="online_user_id"/>
+                <field name="live_room_id"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="tree_live_live_users">
+        <field name="name">在线主播表</field>
+        <field name="model">live.live_user_ids</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="live_user_id"/>
+                <field name="live_room_id"/>
+            </tree>
+        </field>
+    </record>
+
+
+</odoo>
